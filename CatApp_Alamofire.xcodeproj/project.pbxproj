@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		982CA5F42D9E68C200DA9F23 /* Loaf in Frameworks */ = {isa = PBXBuildFile; productRef = 982CA5F32D9E68C200DA9F23 /* Loaf */; };
 		983F40722D96291500E60525 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 983F40712D96291500E60525 /* Toast */; };
 		98B860142D82BEEA0045C41E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 98B860132D82BEEA0045C41E /* Kingfisher */; };
+		98CAA4BB2DAE2C9F003CC791 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 98CAA4BA2DAE2C9F003CC791 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,8 +88,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				983F40722D96291500E60525 /* Toast in Frameworks */,
+				98CAA4BB2DAE2C9F003CC791 /* Alamofire in Frameworks */,
 				98B860142D82BEEA0045C41E /* Kingfisher in Frameworks */,
-				982CA5F42D9E68C200DA9F23 /* Loaf in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +152,7 @@
 			packageProductDependencies = (
 				98B860132D82BEEA0045C41E /* Kingfisher */,
 				983F40712D96291500E60525 /* Toast */,
-				982CA5F32D9E68C200DA9F23 /* Loaf */,
+				98CAA4BA2DAE2C9F003CC791 /* Alamofire */,
 			);
 			productName = CatApp_Turtorial;
 			productReference = 98B85A312D7FFA670045C41E /* CatApp_Alamofire.app */;
@@ -240,7 +240,7 @@
 			packageReferences = (
 				98B860122D82BEEA0045C41E /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				983F40702D96291500E60525 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
-				982CA5F22D9E68C200DA9F23 /* XCRemoteSwiftPackageReference "Loaf" */,
+				98CAA4B92DAE2C9F003CC791 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 98B85A322D7FFA670045C41E /* Products */;
@@ -607,14 +607,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		982CA5F22D9E68C200DA9F23 /* XCRemoteSwiftPackageReference "Loaf" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/schmidyy/Loaf.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.7.0;
-			};
-		};
 		983F40702D96291500E60525 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
@@ -631,14 +623,17 @@
 				minimumVersion = 8.3.0;
 			};
 		};
+		98CAA4B92DAE2C9F003CC791 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		982CA5F32D9E68C200DA9F23 /* Loaf */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 982CA5F22D9E68C200DA9F23 /* XCRemoteSwiftPackageReference "Loaf" */;
-			productName = Loaf;
-		};
 		983F40712D96291500E60525 /* Toast */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 983F40702D96291500E60525 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
@@ -648,6 +643,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 98B860122D82BEEA0045C41E /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		98CAA4BA2DAE2C9F003CC791 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 98CAA4B92DAE2C9F003CC791 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

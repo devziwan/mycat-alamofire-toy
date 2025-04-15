@@ -1,6 +1,15 @@
 {
-  "originHash" : "25cc0598d41f1e9a8cbde1018bbb14dafa260ffc02f3af670ee4ec944dac20c6",
+  "originHash" : "0fe3e8565adc5284e4328674af424fc7103869bae4787007148442df927b0d97",
   "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "513364f870f6bfc468f9d2ff0a95caccc10044c5",
+        "version" : "5.10.2"
+      }
+    },
     {
       "identity" : "kingfisher",
       "kind" : "remoteSourceControl",
@@ -8,15 +17,6 @@
       "state" : {
         "revision" : "b450a3b30e0767277a6eed7e02dbdebd7d173da0",
         "version" : "8.3.0"
-      }
-    },
-    {
-      "identity" : "loaf",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/schmidyy/Loaf.git",
-      "state" : {
-        "revision" : "5f78a659666fd1025579ded60960452a4c60eda6",
-        "version" : "0.7.0"
       }
     },
     {

@@ -8,6 +8,8 @@
 import Foundation
 
 import Toast
+import Alamofire
+
 
 // 질문: Result은 자료형이 열거형인데 왜 클로저처리를 해야하는 것일까? -> 질문 수정
 enum CatImagesAPI {
