@@ -10,7 +10,6 @@ import UIKit
 
 import Kingfisher
 import Toast
-import Loaf
 
 
 class UploadPhotosVC: UIViewController {
@@ -22,7 +21,7 @@ class UploadPhotosVC: UIViewController {
     @IBOutlet var editButton: UIButton!
     @IBOutlet var trashButton: UIBarButtonItem!
     
-    // MARK: - Properfies
+    // MARK: - Properties
     
     var deleteUploadImage: [IndexPath] = []
     var isEditingMode: Bool = true // 편집 모드 플래그
