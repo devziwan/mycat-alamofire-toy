@@ -11,7 +11,7 @@ import Toast
 
 class CatImageVM: ObservableObject {
     
-    // MARK: - Properfies
+    // MARK: - Properties
     
     static let shared : CatImageVM = CatImageVM()
 
