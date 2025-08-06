@@ -17,6 +17,7 @@ class TabBarController: UITabBarController {
     var detailPageVC: DetailPageVC?
     
     var tabBarHeght: CGFloat = 0.0
+    
     // MARK: - Lifecycle Methods
     
     override func viewDidLoad() {

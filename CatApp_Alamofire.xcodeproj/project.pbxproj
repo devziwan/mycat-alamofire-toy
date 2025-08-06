@@ -318,6 +318,8 @@
 /* Begin XCBuildConfiguration section */
 		98B85A5B2D7FFA690045C41E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 98B85A332D7FFA670045C41E /* CatApp_Alamofire */;
+			baseConfigurationReferenceRelativePath = DevConfig.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -348,6 +350,8 @@
 		};
 		98B85A5C2D7FFA690045C41E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 98B85A332D7FFA670045C41E /* CatApp_Alamofire */;
+			baseConfigurationReferenceRelativePath = ProdConfig.xcconfig;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -378,6 +382,8 @@
 		};
 		98B85A5D2D7FFA690045C41E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 98B85A332D7FFA670045C41E /* CatApp_Alamofire */;
+			baseConfigurationReferenceRelativePath = DevConfig.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -442,6 +448,8 @@
 		};
 		98B85A5E2D7FFA690045C41E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = 98B85A332D7FFA670045C41E /* CatApp_Alamofire */;
+			baseConfigurationReferenceRelativePath = ProdConfig.xcconfig;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

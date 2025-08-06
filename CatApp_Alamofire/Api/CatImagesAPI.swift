@@ -13,7 +13,13 @@ import Alamofire
 
 enum CatImagesAPI {
     
+    
+    #if DEBUG
     static let endPoint: String = "https://api.thecatapi.com/"
+    #else
+    static let endPoint: String = "https://api.thecatapi.com/"
+    #endif
+        
    
     // MARK: GET
     /// 서버에서 고양이 이미지을 가져옵니다.
@@ -23,9 +29,13 @@ enum CatImagesAPI {
         
         let urlString: String = endPoint + "v1/images/search" + "?limit=\(imageLimit)"
         
+        guard let apiKey = Bundle.main.infoDictionary?["CAT_API_KEY"] as? String else {
+            return
+        }
+        
         AF.request(urlString, method: .get, parameters: nil, headers: [
             "Content-Type": "application",
-            "x-api-key": "live_xLST3RHbCI8ZlLXfi7PG8uwm9GjmFsiqiAz4yrtWVGtCXeB7wZELTOZEAfnfF3Jf"
+            "x-api-key": apiKey
         ])
         .responseDecodable(of: [CatImageResponse].self) { response in
             switch response.result {
@@ -51,8 +61,12 @@ enum CatImagesAPI {
         let urlString: String = endPoint + "v1/images/upload"
         let boundary: String = UUID().uuidString
         
+        guard let apiKey = Bundle.main.infoDictionary?["CAT_API_KEY"] as? String else {
+            return
+        }
+        
         let headers: HTTPHeaders = [
-            "x-api-key": "live_xLST3RHbCI8ZlLXfi7PG8uwm9GjmFsiqiAz4yrtWVGtCXeB7wZELTOZEAfnfF3Jf",
+            "x-api-key": apiKey,
             "Content-Type": "multipart/form-data; boundary=\(boundary)"
         ]
         
@@ -87,9 +101,13 @@ enum CatImagesAPI {
         print(#file, #function, #line, "- 업로드 이미지 조회 요청 ")
         let urlString: String = endPoint + "v1/images/?limit=\(imageLimit)&page=0&order=DESC"
         
+        guard let apiKey = Bundle.main.infoDictionary?["CAT_API_KEY"] as? String else {
+            return
+        }
+        
         let headers: HTTPHeaders = [
             "Content-Type": "application/json",
-            "x-api-key": "live_xLST3RHbCI8ZlLXfi7PG8uwm9GjmFsiqiAz4yrtWVGtCXeB7wZELTOZEAfnfF3Jf"
+            "x-api-key": apiKey
         ]
         
         AF.request(urlString, method: .get, headers: headers)
@@ -119,9 +137,14 @@ enum CatImagesAPI {
         let urlString: String = endPoint + "v1" + "/images/" + "\(imageID)"
         print(#file, #function, #line, "\(urlString)")
         
+        guard let apiKey = Bundle.main.infoDictionary?["CAT_API_KEY"] as? String else {
+            return
+        }
+        
+        
         let headers: HTTPHeaders = [
             "Content-Type": "application/json",
-            "x-api-key": "live_xLST3RHbCI8ZlLXfi7PG8uwm9GjmFsiqiAz4yrtWVGtCXeB7wZELTOZEAfnfF3Jf"
+            "x-api-key": apiKey
         ]
         
         AF.request(urlString, method: .delete, parameters: nil, headers: headers)
@@ -151,9 +174,14 @@ enum CatImagesAPI {
         
         let urlString: String = endPoint + "v1" + "/favourites"
     
+        guard let apiKey = Bundle.main.infoDictionary?["CAT_API_KEY"] as? String else {
+            return
+        }
+        
+        
         let headers: HTTPHeaders = [
             "Content-Type": "application/json",
-            "x-api-key": "live_xLST3RHbCI8ZlLXfi7PG8uwm9GjmFsiqiAz4yrtWVGtCXeB7wZELTOZEAfnfF3Jf"
+            "x-api-key": apiKey
         ]
         
         let body: [String: Any] = [
@@ -181,9 +209,13 @@ enum CatImagesAPI {
          
          let urlString: String = endPoint + "v1/favourites"
         
+        guard let apiKey = Bundle.main.infoDictionary?["CAT_API_KEY"] as? String else {
+            return
+        }
+        
         let headers: HTTPHeaders = [
             "Content-Type": "application/json",
-            "x-api-key": "live_xLST3RHbCI8ZlLXfi7PG8uwm9GjmFsiqiAz4yrtWVGtCXeB7wZELTOZEAfnfF3Jf"
+            "x-api-key": apiKey
         ]
          
         AF.request(urlString, method: .get, parameters: nil, headers: headers)
@@ -215,9 +247,13 @@ enum CatImagesAPI {
         print(#file, #function, #line, "\(urlString)")
         
         
+        guard let apiKey = Bundle.main.infoDictionary?["CAT_API_KEY"] as? String else {
+            return
+        }
+        
         let headers: HTTPHeaders = [
             "Content-Type": "application/json",
-            "x-api-key": "live_xLST3RHbCI8ZlLXfi7PG8uwm9GjmFsiqiAz4yrtWVGtCXeB7wZELTOZEAfnfF3Jf"
+            "x-api-key": apiKey
         ]
         
        AF.request(urlString, method: .delete, parameters: nil, headers: headers)
