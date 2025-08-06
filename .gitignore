@@ -1,0 +1,24 @@
+# ✅ Xcode 사용자 개인 설정 파일 (공유 불필요한 파일)
+*.xcuserstate
+*.xcconfig
+*.xcuserdatad/
+*.xcuserdata/
+xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# ✅ 빌드 결과물 (자동 생성되므로 공유 불필요)
+build/
+DerivedData/
+
+# ✅ macOS 시스템에서 자동 생성되는 숨김 파일
+.DS_Store
+
+# ✅ CocoaPods 라이브러리 (자동 설치됨)
+Pods/
+
+# ✅ Swift 패키지 매니저의 빌드 디렉토리
+.build/
+
+# ✅ IDE 설정 파일 (예: IntelliJ, WebStorm 등)
+.idea/
+*.swp
