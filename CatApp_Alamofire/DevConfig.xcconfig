@@ -11,4 +11,5 @@
 // API Key config
 CAT_API_KEY=live_xLST3RHbCI8ZlLXfi7PG8uwm9GjmFsiqiAz4yrtWVGtCXeB7wZELTOZEAfnfF3Jf
 
+// End Point config
 API_ENDPOINT=https://api.thecatapi.com/
