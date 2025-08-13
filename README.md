@@ -33,13 +33,6 @@
 
 
 
-## API 출처
-
-- 본 프로젝트는 [The Cat API](https://thecatapi.com/)를 사용하여 고양이 이미지를 제공합니다.  
-- API 문서: https://docs.thecatapi.com/
-
-
-
 ##  주요 기능
 
 - 랜덤 고양이 이미지 **API 호출 및 표시**
